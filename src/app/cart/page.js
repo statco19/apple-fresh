@@ -1,3 +1,23 @@
+import Hello from "./hello";
+
 export default function Cart() {
-  return <h1>장바구니입니다</h1>;
+  return (
+    <div>
+      <Hello />
+      <h2 className="title">Cart</h2>
+      <CartItem />
+      <CartItem />
+      <CartItem />
+    </div>
+  );
+}
+
+function CartItem() {
+  return (
+    <div className="cart-item">
+      <p>상품명</p>
+      <p>$40</p>
+      <p>1개</p>
+    </div>
+  );
 }
