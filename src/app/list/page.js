@@ -6,6 +6,7 @@ export default function List() {
       {products.map((item, idx) => {
         return (
           <div className="food" key={idx}>
+            <img className="food-img" src={`/food${idx}.png`} alt={item} />
             <h4>{item} $40</h4>
           </div>
         );
